@@ -1,0 +1,9 @@
+.idea
+.vscode
+.DS_Store
+node_modules/
+yarn*
+dist
+private-domain-interaction-web
+interaction
+package-lock.json
