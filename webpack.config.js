@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 
@@ -48,6 +49,7 @@ module.exports = {
         ],
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src/index.html'), // 需要被处理文件路径
             filename: "index.html" // 文件打包完毕之后，目标文件名称
