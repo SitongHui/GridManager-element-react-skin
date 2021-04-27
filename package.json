@@ -1,19 +1,19 @@
 {
   "name": "gridmanager-element-react-skin",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "gridmanager-skin for element-react",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
-    "build": "babel src -d lib",
-    "build:develop": "webpack --mode development",
-    "build:production": "webpack --mode production"
+    "build": "webpack",
+    "version": "npm run build && npm publish dist",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gridmanager-react": "^1.8.0",
+    "gridmanager-react": "^1.9.1",
     "less": "^4.1.1",
     "less-loader": "^8.0.0",
     "react": "^17.0.1",
@@ -26,6 +26,7 @@
     "@babel/preset-react": "^7.12.13",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^8.1.1",
     "css-loader": "^5.1.1",
     "html-webpack-plugin": "^5.2.0",
     "style-loader": "^2.0.0",

@@ -4,7 +4,7 @@ import 'gridmanager-react/css/gm-react.css';
 import '../css/gridmanager-reset.less';
 // import './index.less';
 
-const ajaxPageTemplate = `
+const index = `
 <div class="gm-toolbar" grid-manager-toolbar="{{vm.gridManagerName}}">
     <!--分页切换-->
     <div class="pagination">
@@ -68,9 +68,9 @@ const emptyTemplate = settings => {
 const defaultOption = {
     skinClassName: 'element-react-skin', // 页样式名称
     emptyTemplate,
-    ajaxPageTemplate,
+    ajaxPageTemplate: index,
 };
 
 $gridManager.defaultOption = defaultOption;
 
-export default GridManager;
+export default Table;

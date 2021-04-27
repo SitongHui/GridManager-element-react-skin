@@ -3,7 +3,6 @@ import ReactDom from 'react-dom';
 import GridManager from 'gridmanager-react';
 import './js/ajaxPageTemplate.jsx';
 import 'gridmanager-react/css/gm-react.css';
-import './index.less';
 import './css/gridmanager-reset.less'
 
 const App = () => {
