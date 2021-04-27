@@ -1,5 +1,4 @@
-import React from 'react';
-import Table, { $gridManager } from 'gridmanager-react';
+import { $gridManager } from 'gridmanager-react';
 import 'gridmanager-react/css/gm-react.css';
 import '../css/gridmanager-reset.less';
 // import './index.less';
@@ -71,6 +70,4 @@ const defaultOption = {
     ajaxPageTemplate: index,
 };
 
-$gridManager.defaultOption = defaultOption;
-
-export default Table;
+$gridManager.mergeDefaultOption(defaultOption);

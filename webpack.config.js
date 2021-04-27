@@ -11,13 +11,10 @@ module.exports = {
     // 文件导出的配置
     output:{
         path: buildPath ,
-        filename: "js/index.js",
+        filename: "index.js",
         libraryTarget: "umd"
     },
-    externals: {
-        'react': 'React',
-        'gridmanager-react': 'gridmanagetReact'
-    },
+    externals: ['gridmanager-react'],
     module: {
         noParse: /node_modules\/(jquery\.js)/,
         rules: [
